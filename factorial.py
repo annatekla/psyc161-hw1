@@ -3,12 +3,15 @@
 Note:  this is just a skeleton for you to work with.  But it already
        has some "bugs" you need to catch and fix.
 """
+#!usr/bin/env python
 
 from nose.tools import assert_equal
 
 def factorial_recursive(n):
     # TODO Define your logic for factorial here
-    pass # does nothing
+    if n-1==0:
+        pass # does nothing
+        return n * (factorial(n-1))
 
 def test_factorial():
     assert_equal(factorial_recursive(1), 1)
@@ -21,4 +24,4 @@ if __name__ == '__main__':
 
     nconditions = raw_input("Please enter number of conditions: ")
     norders = factorial_recursive(nconditions)
-    print("Number of possible trial orders: " + str(norders)
+    print(Number of possible trial orders: " + str(norders)
