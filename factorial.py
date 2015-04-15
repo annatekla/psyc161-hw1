@@ -14,7 +14,7 @@ def factorial_recursive(n):
     estimate the number of possible trial orders."""
     if int(n) < 0:
         print 'WARNING: Number of conditions must not be negative'
-    elif 0<= int(n) <= 1:
+    elif 0 <= int(n) <= 1:
         pass  # does nothing
         return 1
     else:
@@ -38,4 +38,4 @@ if __name__ == '__main__':
     print test_factorial.__doc__
     nconditions = raw_input("Please enter number of conditions: ")
     norders = factorial_recursive(nconditions)
-    print("Number of possible trial orders: " + str(norders))
+    print ("Number of possible trial orders: " + str(norders))
